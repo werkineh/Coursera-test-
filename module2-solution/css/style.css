@@ -1,21 +1,49 @@
 /************************* Desktop****************************/
-@media (min-width: 992px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-    float: left;
-    border: 1px solid green;
-  }
+     * {
+  box-sizing: border-box;
 }
- /************************* Tablet ****************************/ 
+section{
+    background-color: burlywood;
+    position:relative;
+
+}
+.section-title{
+  background-color: #5F9EA0;
+  position:relative;
+  top:0px;
+  right:0px;
+  position:top right;
+     
+}
+section{
+    padding: 2px;
+    margin:10px;
+}
+/************************* Desktop****************************/
+        @media (min-width: 992px) {
+         .col-lg-4{
+             float:left;
+             border:1px solid green;
+             width: 33.33%;
+  }
+         }
+          /************************* Tablet ****************************/ 
 @media (min-width: 768px) and (max-width: 991px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+   .col-md-6{
     float: left;
     border: 1px solid green;
+    width: 50%;
   }
-}
+  .col-md-12{
+    float: left;
+    border: 1px solid green;
+    width: 50%;
+  }
+}   
 /************************* Mobile****************************/
 @media (max-width: 992px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-    float: left;
+  #sec1, #sec2, #sec3 {
     border: 1px solid green;
+    width:100%
   }
 }
