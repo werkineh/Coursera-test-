@@ -22,10 +22,7 @@ section{
   top:0px;
   right:0px;
 }
-/* section{
-    padding-top: 35px;
-    /* margin:10px; *//*
-} */
+
 /************************* Desktop****************************/
         @media (min-width: 992px) {
          .col-lg-4{
@@ -41,16 +38,6 @@ section{
     border: 1px solid green;
     width: 50%;
   }
-  /* .col-md-12{
-    float: left;
-    border: 1px solid green;
-    width: 50%;
-  } */
+  
 }   
-/************************* Mobile****************************/
-/* @media (max-width: 767px) {
-  #sec1, #sec2, #sec3 {
-    border: 1px solid green;
-    width:100%
-  }
-} */
+
