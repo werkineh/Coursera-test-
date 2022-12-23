@@ -1,43 +1,49 @@
-
-/************************* Base CSS****************************/
- * {
-  box-sizing: border-box;
-  margin:0px;
-  padding:0px;
-}
-body{
-  font-family: 'Times New Roman', Times, serif;
-}
-section{
-    background-color: burlywood;
-    position:relative;
-    border:1px solid black;
-    padding:10px;
-    padding-top:35px;
-
-}
-.section-title{
-  background-color: #5F9EA0;
-  position:absolute;
-  top:0px;
-  right:0px;
-}
-
-/************************* Desktop****************************/
-        @media (min-width: 992px) {
-         .col-lg-4{
-             float:left;
-             border:1px solid green;
-             width: 33.33%;
-          }
-         }
-          /************************* Tablet ****************************/ 
-@media (min-width: 768px) and (max-width: 991px) {
-   .col-md-6{
-    float: left;
-    border: 1px solid green;
-    width: 50%;
+   /*****************Base CSS***************/
+   * {
+    box-sizing:border-box;
+    margin:0px;
+    padding:0px;
   }
-  
-}   
-
+  body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  .container{
+    margin:50px;
+  }
+   .container > div{
+      border:2px solid brown;
+      position:relative;
+      padding:30px 10px 5px 10px;
+      margin-right:10px;
+      margin-left:10px;
+      margin-bottom:10px;
+      background-color:rgb(83, 81, 81);
+      color:white;
+    }
+    h3{
+      position:absolute;
+      top:0px;
+      right:0px;
+      border:2px solid burlywood;
+      background-color:rgb(24, 24, 23);
+    }
+    h1{
+      margin-left:50%;
+    }
+/*****************Desktop ***********************/
+@media (min-width:992px){
+.col-lg-4 {
+    float: left;
+    width:calc(33.33% - 20px);
+}
+} 
+/*****************Tablet ***********************/ 
+@media (min-width: 768px) and (max-width:991px) {
+.col-md-6{
+    float:left;
+    width:calc(50% - 20px);
+}
+.col-md-12{
+  width:calc(100% - 20px);
+}
+}       
